@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'sports:direct',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass'
+],
+  pathPrefix: '/sportsdirect',
 };
