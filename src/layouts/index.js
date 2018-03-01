@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
-import './index.scss'
+import '../assets/styles/index.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>

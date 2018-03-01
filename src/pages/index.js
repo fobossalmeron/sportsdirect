@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import ReactPlayer from 'react-player'
+import Platform from '../components/Platform/index'
 
 const IndexPage = () => (
   <div className="bodyLimit">
@@ -27,83 +29,34 @@ const IndexPage = () => (
         <Link to="/page-2/">Go to page 2</Link>
       </div>
     </section>
-    <section>
-      Video
+    <section id="video">
+    <div className="videoWrapper">
+      <div className="videoOverlay"></div>
+      <ReactPlayer url="http://vimeo.com/256668685" playsinline={true}/>
+    </div>
     </section>
-    <section className="#ee">
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-      <h1>invest, increase & protect your brand & investment</h1>
-      <p>the world’s first sports talent social media data
-        & management platform that:</p>
-      <ul>
-        <li>grow</li>
-        <li>manage</li>
-        <li>coach</li>
-        <li>monitor 24/7/365</li>
-        <li>mine big data</li>
-        <li>in-depth report</li>
-        <li>…and crisis manage if needed</li>
-      </ul>
-      <p>all while:</p>
-      <ul>
-        <li>eliminating or reducing risk</li>
-        <li>protecting your investment & brand</li>
-        <li>tracking and protecting ROI</li>
-      </ul>
-      <Link to="/page-2/">Go to page 2</Link>
+    <section id="background">
+     <h2>the <br/>background</h2>
+     <div className="backgroundText">
+     <p>Social Media is important for brands!</p>
+     <p><b>BUT</b> Brands, athletes, agents, clubs, and
+      federations face new and increased
+      challenges or dangers because of <b>social
+      media speed</b> and <b>transparency</b>. <b>What is the
+      true ROI, Who is really following on Social
+      Media. And how to protect investments.</b></p>
+      </div>
     </section>
-    <section>
-      Video
+    <section id="platform">
+    <h2>#1 propietary<br/>platform & solution</h2>
+    <p>9 cutting-edge tools</p>
+    <Platform />
     </section>
-    <section className="#ff">
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-      <h1>invest, increase & protect your brand & investment</h1>
-      <p>the world’s first sports talent social media data
-        & management platform that:</p>
-      <ul>
-        <li>grow</li>
-        <li>manage</li>
-        <li>coach</li>
-        <li>monitor 24/7/365</li>
-        <li>mine big data</li>
-        <li>in-depth report</li>
-        <li>…and crisis manage if needed</li>
-      </ul>
-      <p>all while:</p>
-      <ul>
-        <li>eliminating or reducing risk</li>
-        <li>protecting your investment & brand</li>
-        <li>tracking and protecting ROI</li>
-      </ul>
-      <Link to="/page-2/">Go to page 2</Link>
+    <section id="benefits">
     </section>
-    <section>
-      Video
+    <section id="trustedby">
     </section>
-    <section className="#xx">
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-      <h1>invest, increase & protect your brand & investment</h1>
-      <p>the world’s first sports talent social media data
-        & management platform that:</p>
-      <ul>
-        <li>grow</li>
-        <li>manage</li>
-        <li>coach</li>
-        <li>monitor 24/7/365</li>
-        <li>mine big data</li>
-        <li>in-depth report</li>
-        <li>…and crisis manage if needed</li>
-      </ul>
-      <p>all while:</p>
-      <ul>
-        <li>eliminating or reducing risk</li>
-        <li>protecting your investment & brand</li>
-        <li>tracking and protecting ROI</li>
-      </ul>
-      <Link to="/page-2/">Go to page 2</Link>
-    </section>
-    <section>
-      Video
+    <section id="engage">
     </section>
   </div>
 )

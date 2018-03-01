@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 
 const Nav = () => (
   <header>
-        <Link to="http://designsuccess.com">
+        <a href="http://designsuccess.com">
           design:success
-        </Link>
+        </a>
         <Link to="/">
           sports:direct
         </Link>
