@@ -88,15 +88,17 @@ class Platform extends Component {
     var solutionsList = platformData.solutions.map((solution, index) => (
       <li key={solution.id} onClick={() => this.toggleModal(solution)}>
         <div className="solutionNumber">{solution.id}</div> 
-        <ReactSVG wrapperClassName="iconAnimated" path={withPrefix('/img/layout/iconAnimated.svg')}/>
-        <ReactSVG wrapperClassName="iconStatic" path={withPrefix('/img/solutions/' + solution.icon + '')}/>
+        <ReactSVG wrapperClassName="iconAnimated" path={withPrefix('/svg/layout/iconAnimated.svg')}/>
+        <ReactSVG wrapperClassName="iconStatic" path={withPrefix('/svg/solutions/' + solution.icon + '')}/>
         <h3>{solution.title}</h3>
       </li>
     ));
-    var solutionModal = <SolutionModal solution={this.state.selectedSolution} 
-                                       solutions={platformData.solutions}
-                                       changeSolution={this.toggleModal.bind(this)}
-                                       closeModal={this.closeModal.bind(this)}/>
+    var solutionModal = ( 
+      <SolutionModal solution={this.state.selectedSolution} 
+                     solutions={platformData.solutions}
+                     changeSolution={this.toggleModal.bind(this)}
+                     closeModal={this.closeModal.bind(this)}/>);
+                       
     var isModalToggled = this.state.modalToggled? solutionModal : null;
     return (
       <div className="platformContainer">

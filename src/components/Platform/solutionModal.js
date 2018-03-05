@@ -19,7 +19,7 @@ class SolutionModal extends Component {
       <div className="solutionModal">
         <div className="solutionInfo">
         <a className="close" onClick={() => this.props.closeModal()}></a>
-          <ReactSVG wrapperClassName="iconStatic" path={withPrefix('/img/solutions/' + solution.icon + '')}/>
+          <ReactSVG wrapperClassName="iconStatic" path={withPrefix('/svg/solutions/' + solution.icon + '')}/>
           <p><span>{solution.id}</span><b>{solution.title}</b></p>
           <p>{solution.desc}</p>
         </div>
