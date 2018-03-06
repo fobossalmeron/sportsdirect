@@ -29,7 +29,7 @@ class ContactForm extends Component {
     )
     const sentMessage = (
       <div>
-        <p>Email sent! We will get in touch with you soon.</p>
+        <p>Message sent! We will get in touch with you soon.</p>
       </div>
     )
     const message = this.state.successMessage ? sentMessage : actualForm ;

@@ -5,6 +5,7 @@ import ReactSVG from 'react-svg';
 import ReactPlayer from 'react-player';
 import Platform from '../components/Platform/index';
 import ContactForm from '../components/Form/index';
+import VideoPlayer from '../components/VideoPlayer/index';
 
 
 const IndexPage = () => (
@@ -88,6 +89,7 @@ const IndexPage = () => (
     </section>
     <section id="tracking_platform">
       <h2>3D Data: Deep Tracking Platform</h2>
+      <ReactSVG wrapperClassName="graph" path={withPrefix('/svg/layout/graph.svg')}/>
     </section>
     <section id="benefits">
     <h2>benefits</h2>
@@ -187,10 +189,7 @@ const IndexPage = () => (
       <ReactSVG path={withPrefix('/svg/clients/clientKraft.svg')}/>
       <ReactSVG path={withPrefix('/svg/clients/clientSanofi.svg')}/>
       <ReactSVG path={withPrefix('/svg/clients/clientPfizer.svg')}/>
-      <div className="trustedVideo">
-        <ReactPlayer url={withPrefix('/video/intro.mp4')} playsinline loop playing/>
-        <p>what our clients say about us</p>
-      </div>
+      <VideoPlayer/>
       <ReactSVG path={withPrefix('/svg/clients/clientNovartis.svg')}/>
       <div>
         <ReactSVG className="hasDetailBox" path={withPrefix('/svg/clients/clientNike.svg')}/>
@@ -210,17 +209,17 @@ const IndexPage = () => (
     <ReactSVG wrapperClassName="engageLogo" path={withPrefix('/svg/layout/sportsDirect.svg')}/>
     <h2>challenges welcome</h2>
     <div className="locationContact">
-      <ul>
+      <ul className="chooseList">
         <li>las vegas</li>
         <li>mexico city</li> 
         <li>chicago toronto</li> 
         <li>copenhague</li> 
         <li>singapore</li>
       </ul>
-    <p>universal number: +1-702 802 0200</p>
-    <p>success@designsuccess.com</p>
+      <p>universal number: +1-702 802 0200</p>
+      <p><a href="mailto:success@designsuccess.com">success@designsuccess.com</a></p>
    </div>
-    <ContactForm />
+  <ContactForm />
    <ReactSVG wrapperClassName="locationMap" path={withPrefix('/svg/layout/locationMap.svg')}/>
     </section>
     <footer>
