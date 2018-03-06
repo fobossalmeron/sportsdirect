@@ -56,6 +56,7 @@ footer {
 
 header {
   position: fixed;
+  background-color: black;
   display: flex;
   max-width: 1400px;
   z-index: 10;
@@ -68,7 +69,7 @@ header {
   font-size: 1.5rem;
   width: 100%;
   box-sizing: border-box;
-  padding: 15px 4%;
+  padding: 15px 4% 8px 4%;
   .hideText{
     font-size: 0rem;
   }
@@ -556,7 +557,7 @@ section {
       }  
       .diagramAnimated{
         grid-area: graphic;
-        max-height: 400px;
+        max-height: 450px;
         svg polygon{
           stroke-dasharray: .5 7;
           stroke-dashoffset: 50;
