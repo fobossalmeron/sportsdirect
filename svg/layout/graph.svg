@@ -18,7 +18,7 @@
 </style>
 <defs>
   <pattern id="boot" patternUnits="userSpaceOnUse" width="100%" height="100%">
-    <image xlink:href="img/layout/boot.jpg" x="0" y="0" width="300" height="400" />
+    <image xlink:href="svg/layout/boot.jpg" x="0" y="0" width="300" height="400" />
   </pattern>
 </defs>
 <g id="backs">
