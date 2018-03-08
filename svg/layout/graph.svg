@@ -6,10 +6,10 @@
 	.st1{display:inline;fill:#D1668F;stroke:#F9ED22;stroke-width:1.433;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#F9ED22;stroke-width:0.1;stroke-miterlimit:10;}
 	.st3{fill:#F9ED22;}
-	.st4{font-family:'TitilliumWeb-Bold';}
+	.st4{font-family:inherit;font-weight:600;}
 	.st5{font-size:41.72px;}
 	.st6{fill:#FFFFFF;}
-	.st7{font-family:'TitilliumWeb-Regular';}
+	.st7{font-family:inherit;font-weight:300;}
 	.st8{font-size:26px;}
 	.st9{font-size:34.419px;}
 	.st10{font-size:8.0268px;}
