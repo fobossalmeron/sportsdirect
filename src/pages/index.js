@@ -12,6 +12,7 @@ const IndexPage = () => (
   <div className="bodyLimit">
     <section id="home">
       <h1>sports:direct</h1>
+      <h3>social media solution to grow, monitor, manage and protect your talent, brand & ROI</h3>
       <ReactSVG wrapperClassName="mainLogo" path={withPrefix('/svg/layout/sportsDirect.svg')}/>
       <h2>invest, increase & protect your brand & investment</h2>
       <div className="homeText">
@@ -26,13 +27,29 @@ const IndexPage = () => (
           <li>in-depth report</li>
           <li>…and crisis manage if needed</li>
         </ul>
-        <p>all while:</p>
-        <ul>
-          <li>eliminating or reducing risk</li>
-          <li>protecting your investment & brand</li>
-          <li>tracking and protecting ROI</li>
-        </ul>
       </div>
+    </section>
+    <section id="worldsfirst">
+      <h2>world’s first<br/>& only solution</h2>
+      <p>360 degree social media data &
+management platform to coach, grow,
+manage and monitor sports talent - and
+while getting deeper data.
+<span>Result: Reduce risk and increase ROI</span></p>
+  <div className="firstColumned">
+  <div className="option">
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <p>reduce risk</p>
+  </div>
+  <div className="option">
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <p>increase ROI</p>
+  </div>
+  <div className="option">
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <p>deep data power</p>
+  </div>
+  </div>
     </section>
     <section id="video">
     <div className="videoWrapper">
@@ -57,7 +74,7 @@ const IndexPage = () => (
       <p>9 cutting-edge tools</p>
       <Platform />
     </section>
-    <section id="deepdata">
+    <section id="worldsfirst">
       <h2>deep data demand. done.</h2>
       <div className="firstColumned">
         <p>Get deep data that no other can deliver with 3D Data Platform: Direct Deep Data</p>
