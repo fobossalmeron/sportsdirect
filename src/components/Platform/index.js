@@ -31,8 +31,8 @@ const platformData = {
     },
     {
       "id": 5,
-      "title": "campaign creation & content curation",
-      "desc": "Consulting and/or creation of campaigns, strategy and execution – <br/>including talent / influencer content curation.",
+      "title": "campaign support",
+      "desc": "Campaign Consulting and support; strategy and execution. Including guidance to utilizing sports:direct’s 3D Direct Deep Data Platform.",
       "icon": "campaign.svg",
     },
     {
@@ -43,20 +43,20 @@ const platformData = {
     },
     {
       "id": 7,
-      "title": "posting & approval management",
-      "desc": "All social media channels.<br/>Contract consulting, management, full access of all influencer postings.",
+      "title": "posting management",
+      "desc": "Coordination and fulfillment of 3D Direct Deep Data Pages and scheduling.",
       "icon": "posting.svg",
     },
     {
       "id": 8,
       "title": "24/7 monitoring & crisis management",
-      "desc": "Weekly & Monthly Analytical Insight Reporting.",
+      "desc": "<ul><li>Industry-first Social Media monitoring, alert and crisis management.</li><li>Custom Alerts. In-real time signals automatic alerts to a potential crisis or emerging trend in your dataset.</li><li>Detects significant or sudden changes such as shifts in volume or sentiment.</li><ul>",
       "icon": "monitor.svg",
     },
     {
       "id": 9,
       "title": "3D Data: Direct Deep Data Intelligence",
-      "desc": "a. Industry-first Social Media monitoring, alert and crisis management.<br/>b. Custom Alerts. In-real time signals automatic alerts to a potential crisis or emerging trend in your dataset.<br/>c. Detects significant or sudden changes such as shifts in volume or sentiment.",
+      "desc": "Patent-pending and proprietary data and engagement tracking platform. Direct Deep Data Page is measuring and deep tracking users engagement and sales channel preference and purchase intent; digital and physical locations.",
       "icon": "deep.svg",
     }
   ]

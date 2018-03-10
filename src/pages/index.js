@@ -31,22 +31,19 @@ const IndexPage = () => (
     </section>
     <section id="worldsfirst">
       <h2>world’s first<br/>& only solution</h2>
-      <p>360 degree social media data &
-management platform to coach, grow,
-manage and monitor sports talent - and
-while getting deeper data.
-<span>Result: Reduce risk and increase ROI</span></p>
+      <p>360 degree social media data & management platform to coach, grow, manage and monitor sports talent - and while getting deeper data.<br/>
+      <span>Result: Reduce risk and increase ROI</span></p>
   <div className="firstColumned">
   <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/reduceRisk.svg')}/>
   <p>reduce risk</p>
   </div>
   <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/increaseRoi.svg')}/>
   <p>increase ROI</p>
   </div>
   <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
+  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/deepDataPower.svg')}/>
   <p>deep data power</p>
   </div>
   </div>
@@ -61,20 +58,22 @@ while getting deeper data.
      <h2>the <br/>background</h2>
      <div className="backgroundText">
      <p>Social Media is important for brands!</p>
-     <p><b>BUT</b> Brands, athletes, agents, clubs, and
-      federations face new and increased
-      challenges or dangers because of <b>social
-      media speed</b> and <b>transparency</b>. <b>What is the
-      true ROI, Who is really following on Social
-      Media. And how to protect investments.</b></p>
+     <p><b>BUT</b> Brands, athletes, agents, clubs, and<br/>
+        federations face new and increased<br/>
+        challenges or dangers because of social<br/>
+        media speed and transparency.<br/>
+        What is the true ROI?<br/>
+        Who is really following on Social Media?<br/>
+        And how to protect investments?</p>
       </div>
+      <h3>relax - the world’s first & only solution is here…</h3>
     </section>
     <section id="platform">
       <h2>#1 propietary<br/>platform & solution</h2>
       <p>9 cutting-edge tools</p>
       <Platform />
     </section>
-    <section id="worldsfirst">
+    <section id="deepdata">
       <h2>deep data demand. done.</h2>
       <div className="firstColumned">
         <p>Get deep data that no other can deliver with 3D Data Platform: Direct Deep Data</p>
@@ -82,12 +81,12 @@ while getting deeper data.
         <p>End-to-end measurements and capabilities measure Billions of Data Points and 100+ Million Physical Locations Worldwide.</p>
       </div>
       <div className="secondColumned">
-        <span>engagement</span>
-        <span>event visit</span>
-        <span>deep engagement</span>
-        <span>physical store visit</span>
-        <span>purchase intent</span>
-        <span>purchase channel preference</span>
+        <span><small>1: </small>engagement</span>
+        <span><small>6: </small>event visit</span>
+        <span><small>2: </small>deep engagement</span>
+        <span><small>5: </small>physical store visit</span>
+        <span><small>3: </small>purchase intent</span>
+        <span><small>4: </small>purchase channel preference</span>
         <ReactSVG wrapperClassName="diagramAnimated" path={withPrefix('/svg/layout/diagramAnimated.svg')}/>
       </div>
       <div className="thirdColumned">
@@ -95,10 +94,10 @@ while getting deeper data.
         <span>1 billion data points<br/>
               100+ million locations</span>
         <div className="socialInteraction">
-        <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/facebook.svg')}/>
-        <ReactSVG wrapperClassName="socialIcon deepOnly" path={withPrefix('/svg/social/youtube.svg')}/>
-        <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/instagram.svg')}/>
-        <ReactSVG wrapperClassName="socialIcon deepOnly" path={withPrefix('/svg/social/linkedin.svg')}/>
+        <ReactSVG wrapperClassName="socialIcon deepOnly" path={withPrefix('/svg/social/facebook.svg')}/>
+        <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/youtube.svg')}/>
+        <ReactSVG wrapperClassName="socialIcon deepOnly" path={withPrefix('/svg/social/instagram.svg')}/>
+        <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/linkedin.svg')}/>
         <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/social/twitter.svg')}/>
         <p>*: Deep engagement data only</p>
         </div>
