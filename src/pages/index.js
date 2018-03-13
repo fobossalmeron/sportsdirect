@@ -122,7 +122,7 @@ const IndexPage = () => (
           <li>‘Protecting’ brands investment in Athlete</li>
           <li>Protecting brand name</li>
           <li>Negotiation tool for Athlete sponsorships</li>
-          <li>Managing Athletes digital content<br/>– incl. scheduling</li>
+          <li>Managing Athletes digital content<br/> – incl. scheduling</li>
           <li>Social Media training of Athlete</li>
           <li>Exclusive Consumer Data</li>
           <li>Social Media crisis management</li>
