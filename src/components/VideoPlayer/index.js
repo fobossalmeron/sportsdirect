@@ -22,7 +22,7 @@ toggleVideo(){
     return (
       <div className="trustedVideo">
         <div onClick={this.toggleVideo} id="trianglePlay"></div>
-        <ReactPlayer url={withPrefix('/video/intro.mp4')} playsinline controls={false} playing={this.state.playing} loop/>
+        <ReactPlayer playsinline controls={false} playing={this.state.playing} loop/>
         <p>what our clients say about us</p>
       </div>
     );

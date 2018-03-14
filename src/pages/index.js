@@ -33,27 +33,27 @@ const IndexPage = () => (
       <h2>world’s first<br/>& only solution</h2>
       <p>360 degree social media data & management platform to coach, grow, manage and monitor sports talent - and while getting deeper data.<br/>
       <span>Result: Reduce risk and increase ROI</span></p>
-  <div className="firstColumned">
-  <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/reduceRisk.svg')}/>
-  <p>reduce risk</p>
-  </div>
-  <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/increaseRoi.svg')}/>
-  <p>increase ROI</p>
-  </div>
-  <div className="option">
-  <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/deepDataPower.svg')}/>
-  <p>deep data power</p>
-  </div>
-  </div>
+      <div className="firstColumned">
+        <div className="option">
+          <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/reduceRisk.svg')}/>
+          <p>reduce risk</p>
+        </div>
+        <div className="option">
+          <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/increaseRoi.svg')}/>
+          <p>increase ROI</p>
+        </div>
+        <div className="option">
+          <ReactSVG wrapperClassName="socialIcon" path={withPrefix('/svg/layout/deepDataPower.svg')}/>
+          <p>deep data power</p>
+        </div>
+      </div>
     </section>
-    <section id="video">
-    <div className="videoWrapper">
-      <div className="videoOverlay"></div>
-      <ReactPlayer url="http://vimeo.com/256668685" playsinline={true}/>
-    </div>
-    </section>
+    {/*<section id="video">
+      <div className="videoWrapper">
+        <div className="videoOverlay"></div>
+        <ReactPlayer url="http://vimeo.com/256668685" playsinline={true}/>
+      </div>
+</section>*/}
     <section id="background">
      <h2>the <br/>background</h2>
      <div className="backgroundText">
@@ -182,7 +182,7 @@ const IndexPage = () => (
     </div>
     </section>
     <section id="trustedby">
-      <div className="firstColumned">
+      {/*<div className="firstColumned">
         <div>
           <p><span>“</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -195,7 +195,7 @@ const IndexPage = () => (
           magna aliquam erat volutpat.<span>“</span></p>
           <label>-Jack Albert. CEO “globalinc”</label>
         </div>
-      </div>
+</div>*/}
       <div className="trustedGrid">
       <ReactSVG path={withPrefix('/svg/clients/clientCocaCola.svg')}/>
       <ReactSVG path={withPrefix('/svg/clients/clientPepsico.svg')}/>

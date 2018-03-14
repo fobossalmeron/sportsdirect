@@ -767,8 +767,13 @@ section {
         z-index: -2;
         text-align: center;
         margin: 7% 0;
+        height:270px;
+        width:420px;
+        justify-content: center;
+        display: flex;  
         #trianglePlay {
           position: absolute;
+          display: none;
           margin: 0 auto;
           width: 0;
           height: 0;
@@ -788,6 +793,8 @@ section {
         p{
           font-size: 1.7rem;
           font-weight: 100;
+          align-items: flex-end;
+          display: flex;
         }
       }
       svg{
