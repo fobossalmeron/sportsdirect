@@ -105,7 +105,7 @@ const IndexPage = () => (
     </section>
     <section id="tracking_platform">
       <h2>3D Data: Deep Tracking Platform</h2>
-      <ReactSVG wrapperClassName="graph" path={withPrefix('/svg/layout/graph.svg')}/>
+      <ReactSVG wrapperClassName="graph" path={withPrefix('/svg/layout/graph2.svg')}/>
     </section>
     <section id="benefits">
     <h2>benefits</h2>
@@ -208,7 +208,7 @@ const IndexPage = () => (
       <VideoPlayer/>
       <ReactSVG path={withPrefix('/svg/clients/clientNovartis.svg')}/>
       <div>
-        <ReactSVG className="hasDetailBox" path={withPrefix('/svg/clients/clientNike.svg')}/>
+        <ReactSVG wrapperClassName="hasDetailBox" path={withPrefix('/svg/clients/clientNike.svg')}/>
         <p className="detailBox">
         NIKE. Insight and innovation exploration of running and female apparel. Identified winning concepts for future trends and business segments
         </p>

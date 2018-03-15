@@ -22,25 +22,25 @@ class Nav extends Component {
         <ReactSVG wrapperClassName="designSuccessLogo" path={withPrefix('/svg/layout/designSuccess.svg')}/>
           design:success
         </a>
-        <Link to="/" className="hideText">
+        <a href="/" className="hideText">
           <ReactSVG wrapperClassName="sportsNavLogo" id="sportsNavLogo" path={withPrefix('/svg/layout/sportsDirect.svg')}/>
           sports:direct
-        </Link>
-        <Link to="#background">
+        </a>
+        <a href="#background">
           background
-        </Link>
-        <Link to="#platform">
+        </a>
+        <a href="#platform">
           platform
-        </Link>
-        <Link to="#benefits">
+        </a>
+        <a href="#benefits">
           benefits
-        </Link>
-        <Link to="#trustedby">
+        </a>
+        <a href="#trustedby">
           trusted by
-        </Link>
-        <Link to="#engage">
+        </a>
+        <a href="#engage">
           engage
-        </Link>
+        </a>
       </header>
     );
   }

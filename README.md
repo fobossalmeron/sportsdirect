@@ -1,0 +1,2 @@
+Imán entre secciones. 
+Favicons

@@ -127,8 +127,8 @@ section {
   align-content: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding: 5%;
+  min-height: 80vh;
+  padding: 8%;
   box-sizing: border-box;
   &#home {
     margin-top: 2%;
@@ -147,6 +147,7 @@ section {
       color: $brand-yellow;
       margin-bottom: 35px;
       line-height: 1;
+      white-space: nowrap;
     }
     .mainLogo{
       grid-area:h1;
@@ -239,7 +240,6 @@ section {
   &#background {
     grid-template-columns: 1fr 3fr 2.4fr 1fr;
     grid-template-areas: ". h2 text ." "h3 h3 h3 h3";
-    padding-bottom: 0;
     h2 {
       grid-area: h2;
       font-size: 7rem;
@@ -744,6 +744,19 @@ section {
             opacity: 1;
           }
         }
+        .hasDetailBox {
+          &:after {
+            content: ' ';
+            width: 40px;
+            height: 3px;
+            margin-top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            display: flex;
+            background-color: $brand-yellow;
+          }
+        }
       }
       .detailBox{
         padding: 20px;
@@ -799,15 +812,6 @@ section {
       }
       svg{
         max-height: 50px;
-        &.hasDetailBox {
-          &:after {
-            content: ' ';
-            width: 50px;
-            height: 3px;
-            display: flex;
-            background-color: $brand-yellow;
-          }
-        }
         & *{
           fill: gray;
         }
