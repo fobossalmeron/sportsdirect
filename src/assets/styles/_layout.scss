@@ -339,6 +339,11 @@ section {
             .iconAnimated, .iconStatic{
               opacity: 1;
             }
+            .iconStatic{
+              svg *{
+                fill: black;
+              }
+            }
             .iconAnimated svg{
               .stj{
                 stroke-dasharray: .5 3;
@@ -366,6 +371,7 @@ section {
             font-weight: 600;
             opacity: 0.4;
             color: $brand-yellow;
+            opacity:0;
           }
           .iconAnimated {
             grid-area: same;
@@ -376,10 +382,12 @@ section {
           .iconStatic {
             grid-area: same;
             z-index: 3;
-            opacity:0;
+            opacity:1;
+            fill: $brand-yellow;
             transition: .3s ease all;
             svg{
               max-height: 140px;
+              transition: .3s ease all;
             }
           }
           h3 {
@@ -390,7 +398,9 @@ section {
             padding: 0px 0 4px;
             font-size: 2rem;
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-top: 25%;
+            margin-bottom: 15px;
+            background-color: black;
           }
         }
       }
@@ -568,6 +578,7 @@ section {
     }
   }
   &#deepdata{
+    justify-items: center;
     h2{
       font-size: 5.5rem;
     }
@@ -585,6 +596,7 @@ section {
     }
     .secondColumned{
       margin-top: 4%;
+      width: 100%;
       margin-bottom: 6%;
       display: grid;
       grid-template-columns: 1fr .9fr 1fr;
@@ -640,8 +652,10 @@ section {
     }
     .thirdColumned{
       display: grid;
-      grid-template-columns: 1fr 1.2fr 1fr 1fr;
+      grid-template-columns: .8fr 1.1fr 1fr;
       font-family: 'Eurostile LT', sans-serif;
+      width: 900px;
+      justify-items: flex-end;
       span{
         font-size: 2.7rem;
         font-weight: 600;
@@ -704,6 +718,7 @@ section {
     }
   }
   &#trustedby{
+    display: none;
     .firstColumned{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -835,7 +850,7 @@ section {
     grid-template-columns: repeat(2, 1fr); 
     justify-content: center;
     align-content: space-between;
-    padding: 0 15% 0 4%;
+    padding: 0 5% 0 14%;
     margin-top: 4%;
     ul {
       grid-area: 1 /span 2;
@@ -849,7 +864,7 @@ section {
     }
     p{
       grid-area: 2 /span 1;
-      margin-right: 41px;
+      margin-right: 86px;
       &:nth-child(2){
         grid-row-end: span 1;
       }

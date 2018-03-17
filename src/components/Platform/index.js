@@ -8,13 +8,13 @@ const platformData = {
     {
       "id": 1,
       "title": "influencer management & consulting",
-      "desc": "Expert team to consult and advise on influencer strategy & management.<br/>Develop, strategize, and create talent digital presence.",
+      "desc": "Expert team to consult and advise on influencer strategy & management. Develop, strategize, and create talent digital presence.",
       "icon": "management.svg",
     },
     {
       "id": 2,
       "title": "influencer coaching",
-      "desc": "Digital & live coaching, tailored to talent with agency compliance guidance.<br/>Amplify Influencer key role with brand awareness.",
+      "desc": "Digital & live coaching, tailored to talent with agency compliance guidance. Amplify Influencer key role with brand awareness.",
       "icon": "coaching.svg",
     },
     {
@@ -26,7 +26,7 @@ const platformData = {
     {
       "id": 4,
       "title": "global influencer monitoring",
-      "desc": "Proprietary monitoring of talent / influencers social media channels.<br/>Instant access to conversations from every social platform. Instant access and categorization (positive and negative) from all social media platforms.",
+      "desc": "Proprietary monitoring of talent / influencers social media channels. Instant access to conversations from every social platform. Instant access and categorization (positive and negative) from all social media platforms.",
       "icon": "global.svg",
     },
     {
@@ -50,7 +50,7 @@ const platformData = {
     {
       "id": 8,
       "title": "24/7 monitoring & crisis management",
-      "desc": "<ul><li>Industry-first Social Media monitoring, alert and crisis management.</li><li>Custom Alerts. In-real time signals automatic alerts to a potential crisis or emerging trend in your dataset.</li><li>Detects significant or sudden changes such as shifts in volume or sentiment.</li><ul>",
+      "desc": "Industry-first Social Media monitoring, alert and crisis management. Custom Alerts. In-real time signals automatic alerts to a potential crisis or emerging trend in your dataset. Detects significant or sudden changes such as shifts in volume or sentiment.",
       "icon": "monitor.svg",
     },
     {

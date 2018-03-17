@@ -35,9 +35,9 @@ class Nav extends Component {
         <a href="#benefits">
           benefits
         </a>
-        <a href="#trustedby">
+        {/*<a href="#trustedby">
           trusted by
-        </a>
+    </a>*/}
         <a href="#engage">
           engage
         </a>

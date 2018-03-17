@@ -31,7 +31,7 @@ const IndexPage = () => (
     </section>
     <section id="worldsfirst">
       <h2>world’s first<br/>& only solution</h2>
-      <p>360 degree social media data & management platform to coach, grow, manage and monitor sports talent - and while getting deeper data.<br/>
+      <p>360 degree social media data & management platform to coach, grow, manage and monitor sports talent<br/> - while getting deeper data.<br/>
       <span>Result: Reduce risk and increase ROI</span></p>
       <div className="firstColumned">
         <div className="option">
@@ -228,8 +228,7 @@ const IndexPage = () => (
       <ul className="chooseList">
         <li>las vegas</li>
         <li>mexico city</li> 
-        <li>chicago toronto</li> 
-        <li>copenhague</li> 
+        <li>copenhaguen</li> 
         <li>singapore</li>
       </ul>
       <p>universal number: +1-702 802 0200</p>
