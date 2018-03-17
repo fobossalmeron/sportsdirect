@@ -29,24 +29,29 @@ module.exports = {
   },
   plugins: [
 		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-sass',
 		{
-			resolve: `gatsby-plugin-favicon`,
+			resolve: `gatsby-plugin-postcss-sass`,
 			options: {
-			  logo: "./src/favicon.png",
-			  injectHTML: true,
-			  icons: {
-				android: true,
-				appleIcon: true,
-				appleStartup: true,
-				coast: false,
-				favicons: true,
-				firefox: true,
-				twitter: false,
-				yandex: false,
-				windows: false
-			  }
-			}
-		  }
-]
+				precision: 8, // SASS default: 5
+			},
+		},
+		{
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/favicon.png",
+        injectHTML: true,
+        icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        firefox: true,
+        twitter: false,
+        yandex: false,
+        windows: false
+        }
+      }
+    },
+	]
 };

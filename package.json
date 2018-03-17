@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "Rodrigo Salmeron <ro@rodrigosalmeron.mx>",
   "dependencies": {
-    "animate.css": "^3.6.1",
     "gatsby": "^1.9.215",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-postcss-sass": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sass": "^1.0.17",
     "react-animate-on-scroll": "^2.0.2",

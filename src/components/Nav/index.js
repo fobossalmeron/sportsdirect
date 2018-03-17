@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Link from 'gatsby-link';
 import ReactSVG from 'react-svg';
 import { withPrefix } from 'gatsby-link';
-import "./../../../node_modules/animate.css/animate.min.css";
 //import ScrollAnimation from 'react-animate-on-scroll';
 //import TweenMax from "gsap";
 //import ScrollMagic from "scrollmagic";
