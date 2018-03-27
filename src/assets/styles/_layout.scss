@@ -23,7 +23,7 @@ dl, dd, ol, ul, figure {
 body {
   margin: 0;
   font-size: 1.4rem;
-  max-width: 1400px;
+  max-width: 1150px;
   margin: 0 auto;
   width: 100%;
   color: white;
@@ -39,6 +39,9 @@ footer {
   margin-bottom: 20px;
   a{
     text-decoration: underline;
+  }
+  p{
+    padding: 0px 8%;
   }
   .socialList {
     width: 150px;
@@ -71,7 +74,7 @@ header {
   box-sizing: border-box;
   padding: 15px 4% 8px 4%;
   .hideText{
-    font-size: 0rem;
+    font-size: 0rem !important;
   }
   .designSuccessLogo, .sportsNavLogo{
     width:120px;
@@ -91,8 +94,9 @@ header {
       opacity: 1;
     }
   }
-  a {
+  a, .a {
     color: white;
+    cursor: pointer;
     flex-grow: 1;
     justify-self: center;
     text-decoration: none;
@@ -107,7 +111,7 @@ header {
     &:nth-child(1), &:nth-child(2) {
       flex-grow: 5;
     }
-    &:hover{
+    &:hover, &.active{
       opacity:1;
       font-weight: 600;
     }
@@ -121,14 +125,14 @@ svg{
   width:100%;
 }
 
-section {
+.section {
   color: white;
   display: grid;
   align-content: center;
   position: relative;
   width: 100%;
-  min-height: 80vh;
-  padding: 8%;
+  min-height: 100vh;
+  padding: 5%;
   box-sizing: border-box;
   &#home {
     margin-top: 2%;
@@ -142,7 +146,7 @@ section {
     }
     h3{
       grid-area: h3;
-      font-size: 2.65rem;
+      font-size: 2.15rem;
       font-weight: 300;
       color: $brand-yellow;
       margin-bottom: 35px;
@@ -193,7 +197,7 @@ section {
     grid-template-areas: ". h2 p ." ". next next .";
     h2{
       grid-area: h2;
-      font-size: 7rem;
+      font-size: 6rem;
       line-height: 1;
     }
     p{
@@ -552,7 +556,7 @@ section {
           margin: 0;
           box-sizing: border-box;
           list-style-type: none;
-          font-size: 1.8rem;
+          font-size: 1.7rem;
           font-weight: 200;
             li {
               &:before{
@@ -595,9 +599,10 @@ section {
       }
     }
     .secondColumned{
-      margin-top: 4%;
+      margin-top: 3%;
+      padding: 0 10%;
       width: 100%;
-      margin-bottom: 6%;
+      margin-bottom: 4%;
       display: grid;
       grid-template-columns: 1fr .9fr 1fr;
       grid-template-areas: ".    engagement    ."
@@ -639,7 +644,6 @@ section {
       }  
       .diagramAnimated{
         grid-area: graphic;
-        max-height: 450px;
         svg polygon{
           stroke-dasharray: .5 7;
           stroke-dashoffset: 50;
@@ -706,7 +710,13 @@ section {
   }
   &#tracking_platform {
     .graph{
+      width: 100%;
+      position: relative;
+      display: block;
       svg{
+        width: 100%;
+        position: relative;
+        display: block;
         #whites *{
           fill: white;
         }
@@ -789,6 +799,7 @@ section {
       }
       .trustedVideo{
         grid-column-start: 3;
+        /* autoprefixer: off */
         grid-column-end: span 2;
         grid-row-start: 2;
         grid-row-end: 2;
@@ -850,8 +861,9 @@ section {
     grid-template-columns: repeat(2, 1fr); 
     justify-content: center;
     align-content: space-between;
-    padding: 0 5% 0 14%;
+    padding: 0 5% 0 10%;
     margin-top: 4%;
+    font-size: 1.3rem;
     ul {
       grid-area: 1 /span 2;
       display: flex;
@@ -864,9 +876,11 @@ section {
     }
     p{
       grid-area: 2 /span 1;
-      margin-right: 86px;
+      justify-self: flex-start;
+      margin-left:30px;
       &:nth-child(2){
         grid-row-end: span 1;
+        margin-left:0;
       }
       flex-grow: 4;
       a{
@@ -945,6 +959,7 @@ section {
   }
   .locationMap{
     grid-column-start: 3;
+    /* autoprefixer: off */
     grid-column-end: col4-end;
     grid-row-start: 1;
     grid-row-end: last-line;

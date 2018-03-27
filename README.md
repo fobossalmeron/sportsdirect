@@ -1,2 +1,1 @@
-Imán entre secciones. 
-Favicons
+responsive 
