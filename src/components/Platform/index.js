@@ -77,6 +77,30 @@ class Platform extends Component {
     });
   }
 
+  nextModal(selected){
+    var index = platformData.solutions.indexOf(selected);
+    if ((index + 2) > platformData.solutions.length) {
+      var nextSolutionName = platformData.solutions[0];
+    } else {
+      var nextSolutionName = platformData.solutions[index+1];
+    }
+    this.setState({
+      selectedSolution: nextSolutionName
+    });
+  }
+
+  prevModal(selected){
+    var index = platformData.solutions.indexOf(selected);
+    if ((index - 1) < 0) {
+      var nextSolutionName = platformData.solutions[platformData.solutions.length -1];
+    } else {
+      var nextSolutionName = platformData.solutions[index-1];
+    }
+    this.setState({
+      selectedSolution: nextSolutionName
+    });
+  }
+
   toggleModal(selected){
     this.setState({
       modalToggled: true,
@@ -97,13 +121,16 @@ class Platform extends Component {
       <SolutionModal solution={this.state.selectedSolution} 
                      solutions={platformData.solutions}
                      changeSolution={this.toggleModal.bind(this)}
+                     prevModal={this.prevModal.bind(this)}
+                     nextModal={this.nextModal.bind(this)}
                      closeModal={this.closeModal.bind(this)}/>);
                        
     var isModalToggled = this.state.modalToggled? solutionModal : null;
+    var mobileAway = this.state.modalToggled? 'hideMe' : null;
     return (
       <div className="platformContainer">
         {isModalToggled}
-        <ul>
+        <ul className={mobileAway}>
           {solutionsList}
         </ul>
       </div>

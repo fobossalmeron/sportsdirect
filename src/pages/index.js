@@ -4,6 +4,7 @@ import ReactSVG from "react-svg";
 import ReactPlayer from "react-player";
 import Platform from "../components/Platform/index";
 import ContactForm from "../components/Form/index";
+import Objects from "../components/Objects/index";
 import VideoPlayer from "../components/VideoPlayer/index";
 
 import ScrollAnim from "rc-scroll-anim";
@@ -309,105 +310,7 @@ class IndexPage extends Component {
         replay={false}
         key="benefitsPack">
           <h2 key="benefits1">benefits</h2>
-          <div key="benefits2" className="objectContainer">
-            <div className="object">
-              <h3>brands</h3>
-              <div className="objectVideo">
-                <ReactPlayer
-                  url={withPrefix("/video/soccer.mp4")}
-                  playsinline
-                  loop
-                  playing
-                />
-              </div>
-              <ul>
-                <li>
-                  Brand & Athlete<br />(Influencer/Talent) fit
-                </li>
-                <li>Athlete Social Media index</li>
-                <li>In-depth Athlete follower demographic data</li>
-                <li>‘Protecting’ brands investment in Athlete</li>
-                <li>Protecting brand name</li>
-                <li>Negotiation tool for Athlete sponsorships</li>
-                <li>
-                  Managing Athletes digital content<br /> – incl. scheduling
-                </li>
-                <li>Social Media training of Athlete</li>
-                <li>Exclusive Consumer Data</li>
-                <li>Social Media crisis management</li>
-                <li>24/7 positive / negative monitoring</li>
-                <li>Illuminate or diminish risk</li>
-              </ul>
-            </div>
-            <div className="object">
-              <h3>athletes</h3>
-              <div className="objectVideo">
-                <ReactPlayer
-                  url={withPrefix("/video/sneaker.mp4")}
-                  playsinline
-                  loop
-                  playing
-                />
-              </div>
-              <ul>
-                <li>Increased brand building</li>
-                <li>Personal social media training</li>
-                <li>More time / focus on training, game etc.</li>
-              </ul>
-            </div>
-            <div className="object">
-              <h3>clubs</h3>
-              <div className="objectVideo">
-                <ReactPlayer
-                  url={withPrefix("/video/tshirt.mp4")}
-                  playsinline
-                  loop
-                  playing
-                />
-              </div>
-              <ul>
-                <li>
-                  Brand & Athlete<br /> (Influencer/Talent) fit
-                </li>
-                <li>Athlete Social Media index</li>
-                <li>In-depth Athlete follower demographic data</li>
-                <li>ROI of Athlete engagement; current and projected</li>
-                <li>In-depth Athlete follower demographic data</li>
-                <li>‘Protecting’ agents/clubs investment in Athlete</li>
-                <li>Protecting club name</li>
-                <li>Negotiation tool for Athlete sponsorships</li>
-                <li>Social Media crisis management</li>
-                <li>24/7 positive / negative monitoring</li>
-                <li>Illuminate or diminish risk</li>
-              </ul>
-            </div>
-            <div className="object">
-              <h3>agents</h3>
-              <div className="objectVideo">
-                <ReactPlayer
-                  url={withPrefix("/video/briefcase.mp4")}
-                  playsinline
-                  loop
-                  playing
-                />
-              </div>
-              <ul>
-                <li>
-                  Brand & Athlete <br /> (Influencer/Talent) fit
-                </li>
-                <li>Athlete Social Media index</li>
-                <li>In-depth Athlete follower demographic data</li>
-                <li>ROI of Athlete engagement; current and projected</li>
-                <li>In-depth Athlete follower demographic data</li>
-                <li>‘Protecting’ agents/clubs investment in Athlete</li>
-                <li>Protecting club name</li>
-                <li>Negotiation tool for Athlete sponsorships</li>
-                <li>Social Media crisis management</li>
-                <li>24/7 positive / negative monitoring</li>
-                <li>Illuminate or diminish risk</li>
-              </ul>
-            </div>
-          </div>
+          <Objects key="benefits2"/>
         </ScrollOverPack>
                 {/*
         <section id="trustedby">
@@ -424,8 +327,8 @@ class IndexPage extends Component {
         magna aliquam erat volutpat.<span>“</span></p>
         <label>-Jack Albert. CEO “globalinc”</label>
       </div>
-</div>*/}
-         {/*} <div className="trustedGrid">
+        </div>
+          <div className="trustedGrid">
             <ReactSVG path={withPrefix("/svg/clients/clientCocaCola.svg")} />
             <ReactSVG path={withPrefix("/svg/clients/clientPepsico.svg")} />
             <ReactSVG path={withPrefix("/svg/clients/clientChanel.svg")} />
@@ -454,7 +357,7 @@ class IndexPage extends Component {
             <ReactSVG path={withPrefix("/svg/clients/clientBMW.svg")} />
             <ReactSVG path={withPrefix("/svg/clients/clientCampbells.svg")} />
           </div>
-</section>*/}
+          </section>*/}
         <ScrollOverPack
         id="engage"
         playScale={1}

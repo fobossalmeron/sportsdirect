@@ -390,7 +390,7 @@ svg{
             fill: $brand-yellow;
             transition: .3s ease all;
             svg{
-              max-height: 140px;
+              max-height: 120px;
               transition: .3s ease all;
             }
           }
@@ -475,6 +475,9 @@ svg{
         border: 1px solid grey;
         border-width: 1px 0;
         padding: 0 5%;
+        .next, .prev {
+          display:none;
+        }
         .iconStatic {
           grid-area: icon;
           svg{
@@ -493,7 +496,7 @@ svg{
             font-size:3.5rem;
             font-weight:700;
           }
-          &:nth-child(4){
+          &:nth-child(6){
             padding-left: 70px;
             grid-area: desc;
           }
@@ -532,6 +535,7 @@ svg{
         display: grid;
         grid-template-areas: "list" "title";
         border-right: 1px solid gray;
+        justify-content: center;
         grid-template-rows: 1fr;
         &:nth-last-of-type(1){
           border-right: 0px;
@@ -658,7 +662,7 @@ svg{
       display: grid;
       grid-template-columns: .8fr 1.1fr 1fr;
       font-family: 'Eurostile LT', sans-serif;
-      width: 900px;
+      max-width: 900px;
       justify-items: flex-end;
       span{
         font-size: 2.7rem;
