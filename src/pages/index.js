@@ -20,6 +20,9 @@ class IndexPage extends Component {
     ["barAnimate", "onFocus"].forEach(
       method => (this[method] = this[method].bind(this))
     );
+    this.state = {
+      navOpen: false
+    };
   }
   componentDidMount() {
     ScrollAnim.scrollScreen.init({ loop: true });
@@ -30,6 +33,17 @@ class IndexPage extends Component {
     this.barAnimate();
   }
 
+  toggleNav(){
+    this.setState({
+      navOpen: !this.state.navOpen
+    })
+  }
+  closeNav(){
+    this.setState({
+      navOpen: false
+    })
+  }
+
   barAnimate() {
     if (!this.dom) {
       return;
@@ -38,6 +52,7 @@ class IndexPage extends Component {
     //bar.style.left = `${this.dom.getBoundingClientRect().left}px`;
   }
   render() {
+    var navToggled = this.state.navOpen? 'toggled' : '';
     return (
       <div className="bodyLimit" id="bodyLimit">
         <header>
@@ -45,6 +60,10 @@ class IndexPage extends Component {
             <ReactSVG
               wrapperClassName="designSuccessLogo"
               path={withPrefix("/svg/layout/designSuccess.svg")}
+            />
+            <ReactSVG
+              wrapperClassName="designSuccessLogoMobile"
+              path={withPrefix("/svg/layout/designSuccessMobile.svg")}
             />
             design:success
           </a>
@@ -62,6 +81,13 @@ class IndexPage extends Component {
             />
             sports:direct
           </Link>
+          <div id="hamburger" className={navToggled} onClick={() => this.toggleNav()}>
+          <ReactSVG
+              wrapperClassName="hamburgerIcon"
+              path={withPrefix("/svg/layout/hamburger.svg")}
+            />
+          </div>
+          <nav className={navToggled} onClick={() => this.closeNav()}>
           <Link
             to="background"
             className="a"
@@ -82,6 +108,7 @@ class IndexPage extends Component {
             engage
           </Link>
           <div ref="bar" className="nav-bar" />
+          </nav>
         </header>
           <ScrollOverPack
             id="home"

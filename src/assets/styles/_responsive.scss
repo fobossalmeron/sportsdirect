@@ -1,4 +1,88 @@
 @media only screen and (max-width: 700px) {
+  header{
+    align-items: center;
+    .designSuccessLogo {
+      display:none;
+    }
+    a, .a{
+      &:nth-child(1){
+          flex-grow: 1;
+          align-items: center;
+          width: 20px;
+      }
+    }
+    .designSuccessLogoMobile{
+      display: flex;
+      width: 60px;
+      #yellow{
+        fill: $brand-yellow;
+      }
+    }
+    #hamburger.toggled{
+      .hamburgerIcon svg{
+        #top{
+          transform: rotate(45deg) translateY(-32px);
+        }
+        #mid{
+          opacity:0;
+        }
+        #bot{
+          transform: rotate(-45deg) translateY(-83px) translateX(-120px);
+        }
+      }
+    }
+    #hamburger .hamburgerIcon svg *{
+      transition: .3s ease all;
+    }
+    .hamburgerIcon{
+      display:flex;
+      flex-grow:1;
+      stroke: white;
+      stroke-width:15;
+      height:30px;
+      max-width: 30px;
+      cursor:pointer;
+      svg {
+        transition: .3s ease all;
+        & *{
+          transition: .3s ease all;
+        }
+      }
+    }
+    nav{
+      position: absolute;
+      width: 100%;
+      background-color: black;
+      height: calc(100vh - 60px);
+      left: -100%;
+      top: 60px;
+      bottom: 0;
+      transition: .3s ease all;
+      grid-template-columns: 1fr;
+      box-sizing: border-box;
+      padding: 5%;
+      .a{
+        font-size:4rem;
+        font-weight:100 !important;
+        opacity:0.4 !important;
+        padding:1%;
+        text-align: left;
+        align-items: center;
+        &:nth-child(1){
+          justify-content: flex-start;
+          width:100%;
+        }
+        justify-content: flex-start;
+        width:100%;
+        &:hover{
+          opacity:1;
+        }
+      }
+      &.toggled{
+        left:0;
+      }
+    }
+  }
   .section {
     &#home {
       grid-template-columns: 1fr;

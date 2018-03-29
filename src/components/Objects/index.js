@@ -41,6 +41,8 @@ class Objects extends Component {
               playsinline
               loop
               playing
+              muted
+              volume={0}
             />
           </div>
           <ul>
@@ -70,6 +72,8 @@ class Objects extends Component {
               playsinline
               loop
               playing
+              muted
+              volume={0}
             />
           </div>
           <ul>
@@ -86,6 +90,8 @@ class Objects extends Component {
               playsinline
               loop
               playing
+              muted
+              volume={0}
             />
           </div>
           <ul>
@@ -112,6 +118,8 @@ class Objects extends Component {
               playsinline
               loop
               playing
+              muted
+              volume={0}
             />
           </div>
           <ul>

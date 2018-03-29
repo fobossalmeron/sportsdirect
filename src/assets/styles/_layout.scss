@@ -73,10 +73,15 @@ header {
   width: 100%;
   box-sizing: border-box;
   padding: 15px 4% 8px 4%;
+  nav{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
   .hideText{
     font-size: 0rem !important;
   }
-  .designSuccessLogo, .sportsNavLogo{
+  .designSuccessLogo,.designSuccessLogoMobile, .sportsNavLogo{
     width:120px;
     svg *{
       fill: white;
@@ -84,6 +89,9 @@ header {
         fill: $brand-yellow;
       }
     }
+  }
+  .designSuccessLogoMobile, .hamburgerIcon{
+    display:none;
   }
   .animated{
     opacity: 0;
@@ -109,7 +117,7 @@ header {
       opacity:1;
     } 
     &:nth-child(1), &:nth-child(2) {
-      flex-grow: 5;
+      flex-grow: 3;
     }
     &:hover, &.active{
       opacity:1;
