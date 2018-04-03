@@ -7,8 +7,13 @@ class Objects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 0
+      selected: 0,
+      playing: false
     };
+  }
+
+  componentDidMount() {
+    this.setState({ playing: true });
   }
 
   keepOpen(index) {
@@ -20,9 +25,12 @@ class Objects extends Component {
       });
     } else {
       console.log("new index");
-      this.setState({
-        selected: index
-      }, () =>     console.log(this.state.selected));
+      this.setState(
+        {
+          selected: index
+        },
+        () => console.log(this.state.selected)
+      );
     }
   }
 
@@ -33,16 +41,18 @@ class Objects extends Component {
     var fourthSelected = this.state.selected === 4 ? "selected" : "";
     return (
       <div className="objectContainer">
-        <div className={"object " + firstSelected} onClick={() => this.keepOpen(1)}>
+        <div
+          className={"object " + firstSelected}
+          onClick={() => this.keepOpen(1)}
+        >
           <h3>brands</h3>
           <div className="objectVideo">
             <ReactPlayer
               url={withPrefix("/video/soccer.mp4")}
-              playsinline
-              loop
-              playing
-              muted
-              volume={0}
+              playsinline={true}
+              loop={true}
+              playing={this.state.playing}
+              muted={true}
             />
           </div>
           <ul>
@@ -64,16 +74,18 @@ class Objects extends Component {
             <li>Illuminate or diminish risk</li>
           </ul>
         </div>
-        <div className={"object " + secondSelected} onClick={() => this.keepOpen(2)}>
+        <div
+          className={"object " + secondSelected}
+          onClick={() => this.keepOpen(2)}
+        >
           <h3>athletes</h3>
           <div className="objectVideo">
             <ReactPlayer
               url={withPrefix("/video/sneaker.mp4")}
-              playsinline
-              loop
-              playing
-              muted
-              volume={0}
+              playsinline={true}
+              loop={true}
+              playing={this.state.playing}
+              muted={true}
             />
           </div>
           <ul>
@@ -82,16 +94,18 @@ class Objects extends Component {
             <li>More time / focus on training, game etc.</li>
           </ul>
         </div>
-        <div className={"object " + thirdSelected} onClick={() => this.keepOpen(3)}>
+        <div
+          className={"object " + thirdSelected}
+          onClick={() => this.keepOpen(3)}
+        >
           <h3>clubs</h3>
           <div className="objectVideo">
             <ReactPlayer
               url={withPrefix("/video/tshirt.mp4")}
-              playsinline
-              loop
-              playing
-              muted
-              volume={0}
+              playsinline={true}
+              loop={true}
+              playing={this.state.playing}
+              muted={true}
             />
           </div>
           <ul>
@@ -110,16 +124,18 @@ class Objects extends Component {
             <li>Illuminate or diminish risk</li>
           </ul>
         </div>
-        <div className={"object " + fourthSelected} onClick={() => this.keepOpen(4)}>
+        <div
+          className={"object " + fourthSelected}
+          onClick={() => this.keepOpen(4)}
+        >
           <h3>agents</h3>
           <div className="objectVideo">
             <ReactPlayer
               url={withPrefix("/video/briefcase.mp4")}
-              playsinline
-              loop
-              playing
-              muted
-              volume={0}
+              playsinline={true}
+              loop={true}
+              playing={this.state.playing}
+              muted={true}
             />
           </div>
           <ul>

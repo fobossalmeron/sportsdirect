@@ -244,12 +244,14 @@
         }
       }
       .thirdColumned{
-        grid-template-columns: .8fr 1fr;
-        width:auto;
+        grid-template-columns: 1fr;
         grid-gap: 10px;
-        justify-items: flex-start;
+        justify-items: center;
+        width: 100%;
+        margin-top: 40px;
         h2{
           font-size: 3.6rem;
+          margin-bottom:0;
         }
         span{
           font-size: 1.8rem;
@@ -258,6 +260,7 @@
           grid-row-start: 2;
           grid-column-start: 2;
           grid-gap: 2px;
+          grid-column-start: 1;
           p {
             font-size:1.2rem;
           }
@@ -337,6 +340,11 @@
       padding: 110px 6% 6% 6%;
       grid-template-columns: 1fr;
       grid-template-areas: "logo" "h2" "form" "locations";
+      .form form div{
+        grid-template-columns: 1fr;
+        grid-gap: 10%;
+        grid-template-areas: "name" "company" "email" "phone" "challenge";
+      }
       .locationMap {
         margin-left: 0;
         position: absolute;
