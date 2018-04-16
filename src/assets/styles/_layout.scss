@@ -302,11 +302,11 @@ svg{
     }
     iframe {
       position: absolute;
+      z-index: 10;
       min-height: 100%;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 0;
       min-width: 100%;
       width: auto !important;
       height: auto !important;

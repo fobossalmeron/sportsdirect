@@ -146,6 +146,20 @@ class IndexPage extends Component {
             </div>
             </ScrollOverPack>
             <ScrollOverPack
+            id="video"
+            className="section"
+            playScale={1}
+            targetId="bodyLimit"
+            always={false}
+            appear={false}
+            replay={false}
+            key="videoKey">
+              <div key="video1" className="videoWrapper">
+                <div key="video2" className="videoOverlay"></div>
+                <ReactPlayer key="video3" url="https://vimeo.com/264421949" playsinline={true}/>
+              </div>
+            </ScrollOverPack>
+            <ScrollOverPack
             id="worldsfirst"
             playScale={1}
             className="section"
@@ -189,12 +203,6 @@ class IndexPage extends Component {
               </div>
             </div>
             </ScrollOverPack>
-        {/* <section id="video">
-              <div className="videoWrapper">
-                <div className="videoOverlay"></div>
-                <ReactPlayer url="http://vimeo.com/256668685" playsinline={true}/>
-              </div>
-          </section>*/}
      <ScrollOverPack
         id="background"
         playScale={1}
