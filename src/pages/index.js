@@ -33,12 +33,12 @@ class IndexPage extends Component {
     this.barAnimate();
   }
 
-  toggleNav(){
+  toggleNav() {
     this.setState({
       navOpen: !this.state.navOpen
     })
   }
-  closeNav(){
+  closeNav() {
     this.setState({
       navOpen: false
     })
@@ -52,7 +52,7 @@ class IndexPage extends Component {
     //bar.style.left = `${this.dom.getBoundingClientRect().left}px`;
   }
   render() {
-    var navToggled = this.state.navOpen? 'toggled' : '';
+    var navToggled = this.state.navOpen ? 'toggled' : '';
     return (
       <div className="bodyLimit" id="bodyLimit">
         <header>
@@ -82,135 +82,135 @@ class IndexPage extends Component {
             sports:direct
           </Link>
           <div id="hamburger" className={navToggled} onClick={() => this.toggleNav()}>
-          <ReactSVG
+            <ReactSVG
               wrapperClassName="hamburgerIcon"
               path={withPrefix("/svg/layout/hamburger.svg")}
             />
           </div>
           <nav className={navToggled} onClick={() => this.closeNav()}>
-          <Link
-            to="background"
-            className="a"
-            showHeightActive="300"
-            toHash={true}
-            onFocus={this.onFocus}
-          >
-            background
+            <Link
+              to="background"
+              className="a"
+              showHeightActive="300"
+              toHash={true}
+              onFocus={this.onFocus}
+            >
+              background
           </Link>
-          <Link to="platform" className="a" toHash={true}>
-            platform
+            <Link to="platform" className="a" toHash={true}>
+              platform
           </Link>
-          <Link to="benefits" className="a" toHash={true}>
-            benefits
+            <Link to="benefits" className="a" toHash={true}>
+              benefits
           </Link>
-          {/*<Link to="trustedby" className="a">trusted by</Link>*/}
-          <Link to="engage" className="a" toHash={true}>
-            engage
+            {/*<Link to="trustedby" className="a">trusted by</Link>*/}
+            <Link to="engage" className="a" toHash={true}>
+              engage
           </Link>
-          <div ref="bar" className="nav-bar" />
+            <div ref="bar" className="nav-bar" />
           </nav>
         </header>
-          <ScrollOverPack
-            id="home"
-            className="section"
-            playScale={1}
-            targetId="bodyLimit"
-            always={false}
-            appear={false}
-            replay={false}
-            key="homePack">
-            <h1 key="home1">sports:direct</h1>
-            <h3 key="home2">
-              social media solution to grow, monitor, manage and protect your
-              talent, brand & ROI
+        <ScrollOverPack
+          id="home"
+          className="section"
+          playScale={1}
+          targetId="bodyLimit"
+          always={false}
+          appear={false}
+          replay={false}
+          key="homePack">
+          <h1 key="home1">sports:direct</h1>
+          <h3 key="home2">
+            social media solution to grow, monitor, manage and protect your
+            talent, brand & ROI
             </h3>
-            <ReactSVG
-              key="home3"
-              wrapperClassName="mainLogo"
-              path={withPrefix("/svg/layout/sportsDirect.svg")}
-            />
-            <h2 key="home4">invest, increase & protect your brand & investment</h2>
-            <div key="home5" className="homeText">
-              <p key="home5.1">
-                the world’s <b>first sports talent social media data & management platform</b> that:
+          <ReactSVG
+            key="home3"
+            wrapperClassName="mainLogo"
+            path={withPrefix("/svg/layout/sportsDirect.svg")}
+          />
+          <h2 key="home4">invest, increase & protect your brand & investment</h2>
+          <div key="home5" className="homeText">
+            <p key="home5.1">
+              the world’s <b>first sports talent social media data & management platform</b> that:
               </p>
-              <ul key="home5.2">
-                <li key="home5.2.1">grow</li>
-                <li key="home5.2.2">manage</li>
-                <li key="home5.2.3">coach</li>
-                <li key="home5.2.4">monitor 24/7/365</li>
-                <li key="home5.2.5"> mine big data</li>
-                <li key="home5.2.6">in-depth report</li>
-                <li key="home5.2.7">…and crisis manage if needed</li>
-              </ul>
-            </div>
-            </ScrollOverPack>
-            <ScrollOverPack
-            id="video"
-            className="section"
-            playScale={1}
-            targetId="bodyLimit"
-            always={false}
-            appear={false}
-            replay={false}
-            key="videoKey">
-              <div key="video1" className="videoWrapper">
-                <div key="video2" className="videoOverlay"></div>
-                <ReactPlayer key="video3" url="https://vimeo.com/264421949" playsinline={true}/>
-              </div>
-            </ScrollOverPack>
-            <ScrollOverPack
-            id="worldsfirst"
-            playScale={1}
-            className="section"
-            always={false}
-            appear={false}
-            replay={false}
-            key="worldsFirstPack">
-            <h2 key="worldsfirst1">
-              world’s first<br />& only solution
+            <ul key="home5.2">
+              <li key="home5.2.1">grow</li>
+              <li key="home5.2.2">manage</li>
+              <li key="home5.2.3">coach</li>
+              <li key="home5.2.4">monitor 24/7/365</li>
+              <li key="home5.2.5"> mine big data</li>
+              <li key="home5.2.6">in-depth report</li>
+              <li key="home5.2.7">…and crisis manage if needed</li>
+            </ul>
+          </div>
+        </ScrollOverPack>
+        <ScrollOverPack
+          id="video"
+          className="section"
+          playScale={1}
+          targetId="bodyLimit"
+          always={false}
+          appear={false}
+          replay={false}
+          key="videoKey">
+          <div key="video1" className="videoWrapper">
+            <div key="video2" className="videoOverlay"></div>
+            <ReactPlayer key="video3" url="https://vimeo.com/264421949" playsinline={true} />
+          </div>
+        </ScrollOverPack>
+        <ScrollOverPack
+          id="worldsfirst"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="worldsFirstPack">
+          <h2 key="worldsfirst1">
+            world’s first<br />& only solution
             </h2>
-            <p key="worldsfirst2">
-              360 degree social media data & management platform to coach, grow,
+          <p key="worldsfirst2">
+            360 degree social media data & management platform to coach, grow,
               manage and monitor sports talent<br /> - while getting deeper
               data.<br />
-              <span key="worldsfirst2.1">Result: Reduce risk and increase ROI</span>
-            </p>
-            <div key="worldsfirst3" className="firstColumned">
-              <div key="worldsfirst3.1" className="option">
-                <ReactSVG
-                  key="worldsfirst3.1.1"
-                  wrapperClassName="socialIcon"
-                  path={withPrefix("/svg/layout/reduceRisk.svg")}
-                />
-                <p key="worldsfirst3.1.2">reduce risk</p>
-              </div>
-              <div key="worldsfirst3.2" className="option">
-                <ReactSVG
-                  key="worldsfirst3.2.1"  
-                  wrapperClassName="socialIcon"
-                  path={withPrefix("/svg/layout/increaseRoi.svg")}
-                />
-                <p key="worldsfirst3.2.2">increase ROI</p>
-              </div>
-              <div key="worldsfirst3.3" className="option">
-                <ReactSVG
-                  key="worldsfirst3.3.1"
-                  wrapperClassName="socialIcon"
-                  path={withPrefix("/svg/layout/deepDataPower.svg")}
-                />
-                <p key="worldsfirst3.3.2">deep data power</p>
-              </div>
+            <span key="worldsfirst2.1">Result: Reduce risk and increase ROI</span>
+          </p>
+          <div key="worldsfirst3" className="firstColumned">
+            <div key="worldsfirst3.1" className="option">
+              <ReactSVG
+                key="worldsfirst3.1.1"
+                wrapperClassName="socialIcon"
+                path={withPrefix("/svg/layout/reduceRisk.svg")}
+              />
+              <p key="worldsfirst3.1.2">reduce risk</p>
             </div>
-            </ScrollOverPack>
-     <ScrollOverPack
-        id="background"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="backgroundPack">
+            <div key="worldsfirst3.2" className="option">
+              <ReactSVG
+                key="worldsfirst3.2.1"
+                wrapperClassName="socialIcon"
+                path={withPrefix("/svg/layout/increaseRoi.svg")}
+              />
+              <p key="worldsfirst3.2.2">increase ROI</p>
+            </div>
+            <div key="worldsfirst3.3" className="option">
+              <ReactSVG
+                key="worldsfirst3.3.1"
+                wrapperClassName="socialIcon"
+                path={withPrefix("/svg/layout/deepDataPower.svg")}
+              />
+              <p key="worldsfirst3.3.2">deep data power</p>
+            </div>
+          </div>
+        </ScrollOverPack>
+        <ScrollOverPack
+          id="background"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="backgroundPack">
           <h2 key="background1">
             the <br />background
           </h2>
@@ -229,28 +229,28 @@ class IndexPage extends Component {
           <h3 key="background5">relax - the world’s first & only solution is here…</h3>
         </ScrollOverPack>
 
-     <ScrollOverPack
-        id="platform"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="platformPack">
+        <ScrollOverPack
+          id="platform"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="platformPack">
           <h2 key="platform1">
             #1 propietary<br />platform & solution
           </h2>
           <p key="platform2">9 cutting-edge tools</p>
-          <Platform key="platform3"/>
+          <Platform key="platform3" />
         </ScrollOverPack>
         <ScrollOverPack
-        id="deepdata"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="deepdataPack">
+          id="deepdata"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="deepdataPack">
           <h2 key="deepdata1">deep data demand. done.</h2>
           <div key="deepdata2" className="firstColumned">
             <p>
@@ -322,13 +322,13 @@ class IndexPage extends Component {
           </div>
         </ScrollOverPack>
         <ScrollOverPack
-        id="tracking_platform"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="trackingPlatformPack">
+          id="tracking_platform"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="trackingPlatformPack">
           <h2 key="tracking1">3D Data: Deep Tracking Platform</h2>
           <ReactSVG
             key="tracking2"
@@ -337,17 +337,17 @@ class IndexPage extends Component {
           />
         </ScrollOverPack>
         <ScrollOverPack
-        id="benefits"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="benefitsPack">
+          id="benefits"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="benefitsPack">
           <h2 key="benefits1">benefits</h2>
-          <Objects key="benefits2"/>
+          <Objects key="benefits2" />
         </ScrollOverPack>
-                {/*
+        {/*
         <section id="trustedby">
           {/*<div className="firstColumned">
       <div>
@@ -394,13 +394,13 @@ class IndexPage extends Component {
           </div>
           </section>*/}
         <ScrollOverPack
-        id="engage"
-        playScale={1}
-        className="section"
-        always={false}
-        appear={false}
-        replay={false}
-        key="engagePack">
+          id="engage"
+          playScale={1}
+          className="section"
+          always={false}
+          appear={false}
+          replay={false}
+          key="engagePack">
           <ReactSVG
             key="engage1"
             wrapperClassName="engageLogo"
@@ -421,7 +421,7 @@ class IndexPage extends Component {
               </a>
             </p>
           </div>
-          <ContactForm key="engage4"/>
+          <ContactForm key="engage4" />
           <ReactSVG
             key="engage5"
             wrapperClassName="locationMap"
