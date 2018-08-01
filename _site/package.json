@@ -1,6 +1,7 @@
 {
   "name": "sportsdirect",
   "description": "Micro site for sports:direct",
+  "main": "webpack.config.js",
   "version": "1.0.0",
   "author": "Rodrigo Salmeron <ro@rodrigosalmeron.mx>",
   "dependencies": {
@@ -9,7 +10,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "start": "webpack -w",
     "build": "webpack -p --progress --config webpack.prod.js"
