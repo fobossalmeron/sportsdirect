@@ -7,6 +7,7 @@ import BenefitsSection from "./presentational/BenefitsSection";
 import TrustedSection from "./presentational/TrustedSection";
 import EngageSection from "./presentational/EngageSection";
 import scrollToComponent from "react-scroll-to-component";
+import SportsDirectIcon from "./../../assets/img/layout/sportsDirect.svg";
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends Component {
     this.state = {
       menuOn: false,
       modalOpen: false,
-      maintenance: false
+      maintenance: true
     };
     this.quitMaintenance = this.quitMaintenance.bind(this);
     this.initScrollMagic = this.initScrollMagic.bind(this);
@@ -59,9 +60,8 @@ class App extends Component {
   render() {
     var maintenanceScreen = (
       <div className="loading">
-        <h2 className="blue">we're</h2>
-        <h2 className="yellow">redesigning</h2>
-        <h2 className="pink">ourselves</h2>
+        <SportsDirectIcon/>
+        <h2>website under construction</h2>
         <button onClick={this.quitMaintenance}>quit</button>
       </div>
     );
