@@ -1,0 +1,21 @@
+---
+title: 'sports:direct - grow, manage and protect your talent, brand and ROI'
+timezone: UTC
+email: success@designsuccess.com
+description: 'The world’s first sports talent social media data and management platform to grow, manage, coach your talent and brand. Reduce risk and increase ROI'
+keywords: 'sports talent, social media management platform, protect brand, increase ROI, sports:direct, sports direct, design success, design:success'
+og_image: '/assets/img/og_image.jpg'
+url: http://gosportsdirect.com/
+markdown: kramdown
+plugins:
+- jekyll-feed
+- jekyll-autoprefixer
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- webpack
+sass:
+  style: compressed
+github:
+- metadata
