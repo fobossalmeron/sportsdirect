@@ -10,6 +10,9 @@ var instaScene = new ScrollMagic.Scene({triggerElement: "#platform", duration: $
 var instaScene = new ScrollMagic.Scene({triggerElement: "#benefits", duration: $('#benefits').height()})
         .setClassToggle( "nav ul li:nth-child(3) a", "active")
         .addTo(controller);
+var instaScene = new ScrollMagic.Scene({triggerElement: "#trustedby", duration: $('#trustedby').height()})
+        .setClassToggle( "nav ul li:nth-child(4) a", "active")
+        .addTo(controller);
 var instaScene = new ScrollMagic.Scene({triggerElement: "#contact", duration: $('#contact').height()})
-        .setClassToggle( "nav ul li:nth-child(6) a", "active")
+        .setClassToggle( "nav ul li:nth-child(5) a", "active")
         .addTo(controller);

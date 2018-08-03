@@ -60,7 +60,7 @@ class App extends Component {
   render() {
     var maintenanceScreen = (
       <div className="loading">
-        <SportsDirectIcon/>
+        <SportsDirectIcon />
         <h2>website under construction</h2>
         <button onClick={this.quitMaintenance}>quit</button>
       </div>
@@ -111,10 +111,13 @@ class App extends Component {
             this.Benefits = section;
           }}
         />
-                <TrustedSection
+        <TrustedSection
           ref={section => {
             this.Trusted = section;
           }}
+          modalOpen={this.state.modalOpen}
+          openModal={this.openModal.bind(this)}
+          closeModal={this.closeModal.bind(this)}
         />
         <EngageSection
           ref={section => {

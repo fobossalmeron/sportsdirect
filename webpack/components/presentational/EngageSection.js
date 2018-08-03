@@ -15,10 +15,12 @@ class EngageSection extends Component {
     return (
       <section id="contact">
         <SportsDirect className="engageLogo" />
-        <h2><ChallengesWelcome/></h2>
+        <h2>
+          <ChallengesWelcome />
+        </h2>
         <div className="locationContact">
           <ul className="chooseList">
-          <li>las vegas</li>
+            <li>las vegas</li>
             <li>mexico city</li>
             <li>chicago</li>
             <li>toronto</li>
@@ -38,16 +40,30 @@ class EngageSection extends Component {
         <LocationMap className="locationMap" />
         <footer>
           <div className="socialList">
-            <FacebookIcon className="socialIcon" />
-            <VimeoIcon className="socialIcon" />
-            <YouTubeIcon className="socialIcon" />
-            <InstagramIcon className="socialIcon" />
-            <LinkedInIcon className="socialIcon" />
-            <TwitterIcon className="socialIcon" />
+            <a href="https://www.facebook.com/designsuccessworldwide/">
+              <FacebookIcon />
+            </a>
+            <a href="https://vimeo.com/user16040545">
+              <VimeoIcon />
+            </a>
+            <a href="https://www.youtube.com/designsuccess/">
+              <YouTubeIcon />
+            </a>
+            <a href="https://www.instagram.com/designsuccessworldwide/">
+              <InstagramIcon />
+            </a>
+            <a href="https://www.linkedin.com/company/designsuccess">
+              <LinkedInIcon />
+            </a>
+            <a href="https://twitter.com/wedesignsuccess">
+              <TwitterIcon />
+            </a>
           </div>
           <p>
             © design success international ds worldwide consulting llc. all
-            rights reserved. <a href="https://designsuccess.com/privacy/">privacy of use</a> | <a href="https://designsuccess.com/terms/">terms & conditions</a>
+            rights reserved.{" "}
+            <a href="https://designsuccess.com/privacy/">privacy of use</a> |{" "}
+            <a href="https://designsuccess.com/terms/">terms & conditions</a>
           </p>
         </footer>
       </section>

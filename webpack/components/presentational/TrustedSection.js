@@ -5,6 +5,7 @@ import Quotes from "./../Trusted/Quotes";
 import PlayIcon from "./../../../assets/img/layout/playButton.svg";
 import clientData from "./../../data/clients"; 
 
+Modal.setAppElement("#app");
 class TrustedSection extends Component {
   constructor() {
     super();
@@ -44,7 +45,7 @@ class TrustedSection extends Component {
             onClick={this.doCloseModal}
           >
             <a className="close" onClick={this.doCloseModal} />
-            <ReactPlayer url="https://vimeo.com/277716867" className="video" />
+            <ReactPlayer url="https://vimeo.com/282907096" className="video" />
           </Modal>
           <div className="trustedVideo" onClick={() => this.props.openModal()}>
             <div className="trustedImage">
