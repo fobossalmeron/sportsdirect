@@ -11,6 +11,14 @@
 }
 
 @include media-query(1200px) {
+    section {
+        padding: 8% 8% 2% 8%;
+    }
+    #background{
+        #backgroundGrid{
+            padding: 8% 0%;
+        }
+    }
     .headerWrapper nav {
         margin-left: -20%;
     }
@@ -32,6 +40,7 @@
         .objectContainer {
             grid-template-columns: 1fr;
             row-gap: 2rem;
+            grid-row-gap: 2rem;
             .objectVideo {
                 max-width: 250px;
                 margin-top: 30px;
@@ -100,6 +109,7 @@
             grid-template-columns: .8fr 1fr;
             grid-gap: 1fr;
             column-gap: 1rem;
+            grid-column-gap: 1rem;
             h2 {
                 font-size: 4rem;
             }
@@ -188,6 +198,9 @@
         #worldsfirst h2 {
             padding-right: 5%;
         }
+            #backgroundGrid{
+                padding: 8% 4%;
+            }
     }
     .desktop {
         display: none;
@@ -434,6 +447,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-column-gap: 4rem;
+            column-gap: 4rem;
             .section .sectionIcon {
                 top: 20px;
             }

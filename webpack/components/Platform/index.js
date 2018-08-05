@@ -121,7 +121,7 @@ class Platform extends Component {
   render() {
     var solutionsList = platformData.solutions.map((solution, index) => (
       <li key={solution.id} onClick={() => this.toggleModal(solution)}>
-        <div className="solutionNumber">{solution.id}</div> 
+        <div className={"solutionNumber"}>{solution.id}</div> 
         <IconAnimated className="iconAnimated"/>
         {solution.icon}
         <h3>{solution.title}</h3>

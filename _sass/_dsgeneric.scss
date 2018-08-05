@@ -313,6 +313,7 @@ svg {
 
 #trustedby {
     padding: 0 3% 3% 3%;
+    display: grid;
     .firstColumned {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -504,6 +505,7 @@ svg {
             flex-direction: column;
             cursor: pointer;
             cursor: pointer;
+            max-height: 300px;
             .trustedImage {
                 display: flex;
                 justify-content: center;
