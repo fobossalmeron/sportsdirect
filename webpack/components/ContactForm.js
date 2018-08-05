@@ -20,7 +20,7 @@ class ContactForm extends Component {
 
   sendMail(data) {
     console.log("Form submitted and valid with:", data);
-    const url = "https://formspree.io/mgydvdem";
+    const url = "https://formspree.io/xjrzyogx";
     const dummyUrl = "https://formspree.io/fobos.salmeron@gmail.com";
 
     var myself = this;
